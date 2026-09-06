@@ -122,7 +122,7 @@ function Footer() {
                   ◎
                 </span>
 
-                @90mliranicafe
+                90mliranicafe@gmail.com
               </a>
 
             </div>

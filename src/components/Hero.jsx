@@ -27,13 +27,13 @@ function Hero() {
 
           <h1 className="font-serif text-[48px] font-bold leading-[1.03] sm:text-[58px] lg:text-[60px] xl:text-[66px]">
 
-            A Little Cup.
+            Small Amount
             <br />
 
             A Lot of{" "}
 
             <span className="text-[#D85A22]">
-              Tradition.
+              Experience
             </span>
 
           </h1>
