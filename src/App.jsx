@@ -6,7 +6,7 @@ import Story from "./components/Story";
 import Gallery from "./components/Gallery";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-
+//ADAADAD
 function App() {
   return (
     <div className="min-h-screen bg-[#062D27]">
