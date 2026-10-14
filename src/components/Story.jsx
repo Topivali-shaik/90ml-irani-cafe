@@ -1,78 +1,72 @@
-function Story() {
+import cafeImage from "../assets/images/Cafe.png";
+
+function OurStory() {
   return (
-    <section
-      id="story"
-      className="flex min-h-screen items-center bg-[#F3E2CC] py-24 text-[#062D27]"
-    >
+    <section className="my-story-section relative w-full overflow-hidden bg-[#F8F0DF]">
+      <div className="my-story-container relative mx-auto w-full max-w-[1440px] px-6 pb-10 pt-12 sm:px-10 sm:pt-16 md:px-16 md:pt-20">
 
-      <div className="mx-auto grid w-[86%] max-w-[1200px] items-center gap-16 lg:grid-cols-2">
+        {/* Story label */}
+        <div className="mb-5 flex items-center gap-4">
+          <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#A43E20] sm:text-lg">
+            Our Story
+          </span>
 
-        {/* IMAGE */}
-        <div className="relative">
-
-          <div className="absolute -left-5 -top-5 h-full w-full rounded-[28px] border border-[#D85A22]" />
-
-          <div className="relative h-[520px] overflow-hidden rounded-[28px]">
-
-            <img
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=90"
-              alt="Cafe interior"
-              className="h-full w-full object-cover"
-            />
-
-          </div>
-
+          <span className="h-[2px] w-16 bg-[#A43E20] sm:w-24" />
         </div>
 
-        {/* CONTENT */}
-        <div>
+        {/* Main heading */}
+        <h2 className="font-serif text-[clamp(3rem,8vw,7rem)] font-bold leading-[0.95] tracking-[-0.04em] text-[#073D2B]">
+          More Than
+          <br />
+          Just a <span className="text-[#A43E20]">Cafe.</span>
+        </h2>
 
-          <div className="mb-5 flex items-center gap-3 text-[9px] font-bold tracking-[0.25em] text-[#D85A22]">
+        {/* Story description */}
+        <p className="mt-6 max-w-[720px] text-base leading-[1.65] text-[#172B22] sm:text-xl md:text-2xl">
+          90ML Irani Cafe is a space where great chai,
+          delicious food and meaningful conversations
+          come together. Inspired by the timeless Irani
+          cafe culture, we bring a small cup with a big
+          experience to Bangalore.
+        </p>
+        
 
-            <span className="h-px w-7 bg-[#D85A22]" />
+{/* Cafe image */}
+<div className="relative mt-8 w-full overflow-hidden">
+  <img
+    src={cafeImage}
+    alt="Inside 90ML Irani Cafe"
+    className="block h-[220px] w-full object-cover sm:h-[420px] md:h-[560px]"
+  />
+</div>
 
-            OUR STORY
 
-          </div>
 
-          <h2 className="font-serif text-[42px] font-bold leading-[1.08]">
+{/* Our Story Button */}
+<div className="mt-10 flex justify-center sm:mt-12">
+  <button
+    type="button"
+    onClick={() => {
+      // Add your story navigation here
+    }}
+    className="group flex w-[85%] max-w-[480px] items-center justify-center gap-5 rounded-full border-2 border-[#D8B96C] bg-[#073D2B] px-8 py-5 text-[#F8F0DF] shadow-[0_8px_20px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0A5038] hover:shadow-[0_12px_25px_rgba(0,0,0,0.22)] sm:gap-7 sm:py-6"
+  >
+    <span className="font-serif text-2xl font-bold sm:text-3xl">
+      Our Story
+    </span>
 
-            More Than
-            <br />
+    <span className="text-3xl transition-transform duration-300 group-hover:translate-x-2">
+      →
+    </span>
+  </button>
+</div>
 
-            Just a{" "}
 
-            <span className="text-[#D85A22]">
-              Cafe.
-            </span>
-
-          </h2>
-
-          <p className="mt-7 text-[13px] leading-[1.9] text-[#351708]">
-            Irani cafes have always been more than places to
-            drink chai. They are spaces where conversations
-            begin, friendships grow and generations meet.
-          </p>
-
-          <p className="mt-5 text-[13px] leading-[1.9] text-[#351708]">
-            At 90ml Irani Cafe, we bring that timeless feeling
-            into a warm, modern space while keeping the soul
-            of the traditional Irani cafe alive.
-          </p>
-
-          <a
-            href="#contact"
-            className="mt-8 inline-flex rounded-full bg-[#062D27] px-6 py-3.5 text-[11px] font-semibold text-white transition hover:bg-[#D85A22]"
-          >
-            Learn More →
-          </a>
-
-        </div>
+        {/* Cafe image, decorative leaves, quote and button come next */}
 
       </div>
-
     </section>
   );
 }
 
-export default Story;
+export default OurStory;

@@ -1,122 +1,236 @@
+import chef from "/src/assets/images/Ameen.png"
+import cafeFacade from "../assets/Images/Vintage Irani Café Facade in Sepia Haze.png";
+import vidhanaSoudha from "../assets/Images/Translucent Watercolor Vidhana Soudha.png";
+import Leaf from "./UI/Leaf";
+import leaf1 from "../assets/images/Leaf_images/Leaf3.png";
+import leaf7 from "../assets/images/Leaf_images/Leaf7.png";
+import Burger from "../assets/images/Food_images/Burger.png";
+import Sandwitch from "../assets/images/Food_images/Sandwitch.png";
+import Samosa from "../assets/images/Food_images/Samosa.png";
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen overflow-hidden bg-[#062D27] text-[#F3E2CC]"
-    >
+    <section className="relative min-h-[440px] w-full overflow-hidden bg-[#F8F0DF]">
 
-      {/* Decorative circle */}
-      <div className="absolute -bottom-[250px] -left-[150px] h-[520px] w-[520px] rounded-full border border-[#D85A22]/50" />
 
-      {/* Decorative dots */}
-      <div className="absolute right-[10%] top-[22%] h-3 w-3 rounded-full bg-[#D85A22]" />
-      <div className="absolute right-[8%] top-[27%] h-2 w-2 rounded-full bg-[#D85A22]" />
 
-      <div className="mx-auto flex min-h-screen w-[86%] max-w-[1200px] items-center">
+      {/* Main chai-cup image */}
 
-        {/* LEFT */}
-        <div className="relative z-20 w-full pt-20 lg:w-[52%]">
 
-          <div className="mb-6 flex items-center gap-3 text-[10px] font-bold tracking-[0.28em] text-[#D85A22]">
+<div className="relative px-0 pt-0 md:pl-[1.5%] md:pr-[1.5%]">
+      <div className="relative px-0 pt-10 md:pl-[1.5%] md:pr-[1.5%]">
 
-            <span className="h-px w-7 bg-[#D85A22]" />
+      
 
-            AUTHENTIC IRANI CHAI
+        {/* Small label */}
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[3px] text-[#963B20]">
+          Authentic Irani Cafe, A Place for chaiholics
+        </p>
 
-          </div>
+        {/* Main headline */}
+        <h1 className="font-serif text-5xl font-bold leading-[0.95] tracking-tight md:text-6xl">
+          <span className="block text-[#073D2B]">
+            Little Cup,
+          </span>
 
-          <h1 className="font-serif text-[48px] font-bold leading-[1.03] sm:text-[58px] lg:text-[60px] xl:text-[66px]">
+          <span className="block text-[#A43D20]">
+            Lots Of Stories.
+          </span>
+        </h1>
+        
+        
 
-            Small Amount
-            <br />
+        <p className="mt-3 max-w-[340px] text-[13px] leading-[1.5] text-[#24241F]">
+          Every sip brings a story.
+          Every visit makes a memory
+        </p>
 
-            A Lot of{" "}
+        <div className="mt-4 ml-2 flex items-center gap-4">
 
-            <span className="text-[#D85A22]">
-              Experience
-            </span>
+          {/* Explore Menu button */}
+          <a
+            href="#menu"
+            className="inline-flex h-[36px] items-center gap-2 rounded-xl border border-[#073D2B] px-5 text-[12px] font-medium text-[#17251D] transition-colors duration-300 hover:bg-[#073D2B] hover:text-white"
+          >
+            <span>♧</span>
+            Explore Menu
+            <span>→</span>
+          </a>
 
-          </h1>
+          {/* Visit Us button */}
+          <a
+            href="#visit-us"
+            className="inline-flex h-[36px] items-center gap-2 rounded-xl border border-[#073D2B] px-5 text-[12px] font-medium text-[#17251D] transition-colors duration-300 hover:bg-[#073D2B] hover:text-white"
+          >
+            <span>♙</span>
+            Visit Us
+          </a>
 
-          <p className="mt-7 max-w-[470px] text-[13px] leading-[1.8] text-[#F3E2CC]/75">
-            Welcome to 90ml Irani Cafe — where every cup carries
-            the warmth, character and timeless charm of an
-            authentic Irani café.
+        </div>
+        <div className="mt-4 ml-2 flex justify-start">
+   <Link
+    to="/get-franchise"
+    className="inline-flex h-[38px] items-center gap-2 rounded-xl border border-[#073D2B] bg-[#073D2B] px-10 text-[12px] font-medium text-[#F8F0DF] transition-colors duration-300 hover:bg-[#0A5038]"
+  >
+    <span>♧</span>
+    Get Franchise
+  </Link>
+</div>
+
+
+        {/* Hero artwork area */}
+        <div className="relative mt-6 min-h-[330px] overflow-hidden">
+
+          
+
+          {/* Vidhana Soudha — left background */}
+          <img
+            src={vidhanaSoudha}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute bottom-0 left-[-5%] z-0 h-[85%] w-[65%] object-contain object-bottom opacity-80"
+          />
+
+          {/* Irani Cafe facade — right background */}
+          <img
+            src={cafeFacade}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute bottom-0 right-[-8%] z-0 h-[100%] w-[62%] object-contain object-bottom opacity-90"
+          />
+
+          {/* Chai Connects People */}
+          <p className="absolute left-[4%] top-[70px] z-20 -rotate-6 font-serif text-1xl italic text-[#A43E20]">
+            "Chai Connects People"
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          {/* Phrase underline */}
+        
 
-            <a
-              href="#menu"
-              className="rounded-full bg-[#D85A22] px-6 py-3.5 text-[11px] font-semibold text-white transition hover:-translate-y-1 hover:bg-[#b94717]"
-            >
-              Explore Menu ☕
-            </a>
-
-            <a
-              href="#story"
-              className="rounded-full border border-[#F3E2CC]/50 px-6 py-3.5 text-[11px] text-[#F3E2CC] transition hover:bg-[#F3E2CC] hover:text-[#062D27]"
-            >
-              Our Story →
-            </a>
-
-          </div>
-
-          {/* BRAND MARK */}
-          <div className="mt-12 flex items-center gap-4">
-
-            <div className="font-serif text-[38px] text-[#D85A22]">
-              90
-              <span className="text-[15px] text-[#F3E2CC]">
-                ml
-              </span>
-            </div>
-
-            <div className="h-10 w-px bg-[#F3E2CC]/25" />
-
-            <div className="text-[7px] leading-[1.6] tracking-[0.2em]">
-              AUTHENTIC
-              <br />
-              IRANI EXPERIENCE
-            </div>
-
-          </div>
+          {/* Chef Artwork Container */}
+<div className="relative mx-auto h-[380px] w-[90%] max-w-[500px] translate-x-9 sm:h-[500px] md:w-[65%]">
+  {/* Add your images here */}
+  <img
+    src={chef}
+    alt="90ML Irani Cafe chef"
+    className="h-full w-full object-contain object-bottom"
+  />
+  <Leaf
+    image={Burger}
+    className="pointer-events-none right-9 top-[8%] z-100 w-25 -rotate-0 opacity-100 sm:w-32 md:w-40"
+  />
+  <Leaf
+    image={Samosa}
+    className="pointer-events-none right-65 top-[40%] z-100 w-15 -rotate-50 opacity-100 sm:w-32 md:w-40"
+  />
+  <Leaf
+    image={Sandwitch}
+    className="pointer-events-none right-1 top-[78%] z-100 w-20 -rotate-0 opacity-100 sm:w-32 md:w-40"
+  />
+  
+</div>
 
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="absolute right-[-100px] top-1/2 hidden h-[650px] w-[650px] -translate-y-1/2 lg:block">
-
-          {/* Orange circle */}
-          <div className="absolute left-0 top-[150px] h-[140px] w-[140px] rounded-full bg-[#D85A22]" />
-
-          {/* Image */}
-          <div className="absolute right-0 top-0 h-[540px] w-[540px] overflow-hidden rounded-full border-[7px] border-[#D85A22]">
-
-            <img
-              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=1200&q=90"
-              alt="Coffee"
-              className="h-full w-full object-cover"
-            />
-
-          </div>
-
-          {/* Decorative beans */}
-          <div className="absolute right-[20px] top-[80px] text-[40px] text-[#D85A22]">
-            ◐
-          </div>
-
-          <div className="absolute right-[-10px] top-[130px] text-[30px] text-[#D85A22]">
-            ◐
-          </div>
-
-          <div className="absolute bottom-[70px] left-[50px] text-[35px] text-[#D85A22]">
-            ◐
-          </div>
-
-        </div>
-
+<Leaf
+    image={leaf1}
+    className="pointer-events-none left-0 top-[92%] z-100 w-28 -rotate-12 opacity-100 sm:w-32 md:w-40"
+  />
       </div>
+      {/* Compact responsive green feature panel */}
+        <div className="relative z-20 mx-0 mt-0 w-full bg-[#003D2D] px-3 pb-5 pt-4 sm:px-5 sm:pb-6 sm:pt-5 md:px-8 md:pb-7 md:pt-6">
+
+          {/* Four features */}
+          <div className="grid grid-cols-4">
+
+            {/* Authentic Taste */}
+            <div className="flex flex-col items-center justify-center gap-2 py-2 text-center">
+              <span className="text-2xl leading-none text-[#F6C66A] sm:text-3xl md:text-4xl">
+                ♧
+              </span>
+              <p className="text-[10px] leading-[1.4] text-[#FFF4DF] sm:text-xs md:text-base">
+                Authentic
+                <br />
+                Taste
+              </p>
+            </div>
+
+            {/* Warm Ambience */}
+            <div className="flex flex-col items-center justify-center gap-2 border-l border-[#496D5B] py-2 text-center">
+              <span className="text-2xl leading-none text-[#F6C66A] sm:text-3xl md:text-4xl">
+                ♙
+              </span>
+              <p className="text-[10px] leading-[1.4] text-[#FFF4DF] sm:text-xs md:text-base">
+                Warm
+                <br />
+                Ambience
+              </p>
+            </div>
+
+            {/* Freshly Brewed */}
+            <div className="flex flex-col items-center justify-center gap-2 border-l border-[#496D5B] py-2 text-center">
+              <span className="text-2xl leading-none text-[#F6C66A] sm:text-3xl md:text-4xl">
+                ♨
+              </span>
+              <p className="text-[10px] leading-[1.4] text-[#FFF4DF] sm:text-xs md:text-base">
+                Freshly
+                <br />
+                Brewed
+              </p>
+            </div>
+
+            {/* Good Food Good People */}
+            <div className="flex flex-col items-center justify-center gap-2 border-l border-[#496D5B] py-2 text-center">
+              <span className="text-2xl leading-none text-[#F6C66A] sm:text-3xl md:text-4xl">
+                ♡
+              </span>
+              <p className="text-[10px] leading-[1.4] text-[#FFF4DF] sm:text-xs md:text-base">
+                Good Food
+                <br />
+                Good People
+              </p>
+            </div>
+
+          </div>
+
+          {/* Responsive wave */}
+          <div className="pointer-events-none absolute bottom-[-1px] left-0 z-20 w-full translate-y-[98%]">
+            <svg
+              viewBox="0 0 1440 70"
+              preserveAspectRatio="none"
+              className="block h-[28px] w-full sm:h-[38px] md:h-[50px]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Terracotta accent */}
+              <path
+                d="M0 0 C150 65 230 10 390 20 C560 30 620 70 780 48 C950 25 1020 5 1160 20 C1300 35 1370 30 1440 0 L1440 0 L0 0 Z"
+                fill="#C4512B"
+              />
+
+              {/* Green foreground wave */}
+              <path
+                d="M0 0 C150 58 230 4 390 14 C560 24 620 62 780 40 C950 18 1020 0 1160 14 C1300 29 1370 24 1440 0 L1440 0 L0 0 Z"
+                fill="#003D2D"
+              />
+            </svg>
+          </div>
+
+        </div>
+        <Leaf
+    image={leaf7}
+    className="pointer-events-none right-0 top-[88%] z-100 w-28 -rotate-230 opacity-100 sm:w-32 md:w-40"
+  />
+
+
+
+        <div className="bg-[#F8F0DF]">
+          {/* Blank menu cards */}
+          <div className="grid grid-cols-2 px-4 py-7 gap-3 sm:grid-cols-3 lg:grid-cols-6 lg:gap-2">
+          </div>
+
+        </div>
+  </div>
     </section>
   );
 }
