@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import developer from "../../assets/images/Topivali.png";
+import developer from "../../assets/Images/Topivali.png";
 
 function AboutDeveloper() {
   return (
