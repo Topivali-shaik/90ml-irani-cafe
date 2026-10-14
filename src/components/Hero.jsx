@@ -1,12 +1,12 @@
-import chef from "/src/assets/images/Ameen.png"
+import chef from "/src/assets/Images/Ameen.png"
 import cafeFacade from "../assets/Images/Vintage Irani Café Facade in Sepia Haze.png";
 import vidhanaSoudha from "../assets/Images/Translucent Watercolor Vidhana Soudha.png";
 import Leaf from "./UI/Leaf";
-import leaf1 from "../assets/images/Leaf_images/Leaf3.png";
-import leaf7 from "../assets/images/Leaf_images/Leaf7.png";
-import Burger from "../assets/images/Food_images/Burger.png";
-import Sandwitch from "../assets/images/Food_images/Sandwitch.png";
-import Samosa from "../assets/images/Food_images/Samosa.png";
+import leaf1 from "../assets/Images/Leaf_images/Leaf3.png";
+import leaf7 from "../assets/Images/Leaf_images/Leaf7.png";
+import Burger from "../assets/Images/Food_images/Burger.png";
+import Sandwitch from "../assets/Images/Food_images/Sandwitch.png";
+import Samosa from "../assets/Images/Food_images/Samosa.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
