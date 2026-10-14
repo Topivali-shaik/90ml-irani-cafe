@@ -5,7 +5,7 @@ import process from "node:process";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.GITHUB_PAGES === "true
+  base: process.env.GITHUB_PAGES === "true"
     ? "/90ml-irani-cafe/"
     : "/",
 });
