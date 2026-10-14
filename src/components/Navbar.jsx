@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/90ml-logo2.png";
+import logo from "../assets/Images/90ml-logo2.png";
 
 const navItems = [
   { label: "Home", to: "/", icon: "⌂" },
