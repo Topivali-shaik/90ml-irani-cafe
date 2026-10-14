@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import founder from "../../assets/images/Ameen2.png"
+import founder from "../../assets/Images/Ameen2.png"
 
 function AboutFounder() {
   return (
