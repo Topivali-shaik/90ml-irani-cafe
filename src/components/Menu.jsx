@@ -5,7 +5,7 @@ import MaskaBun from "../assets/Images/Food_items/MaskaBun.png"
 import Coldcoffee from "../assets/Images/Food_items/ColdCoffee.png"
 import Biscuit from "../assets/Images/Food_items/Biscuit.png"
 import Samosa from "../assets/Images/Food_items/Samosa.jpg"
-import Noodles from "../assets/Images/Food_images/Noodles.png"
+import Noodles from "../assets/Images/Food_Images/Noodles.png"
 import Leaf from "./UI/Leaf";
 
 
