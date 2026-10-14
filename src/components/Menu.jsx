@@ -1,11 +1,11 @@
 import Card from "./UI/Card";
-import iranichai from "../assets/images/Food_items/iraniChai.png"
-import Maggi from "../assets/images/Food_items/Maggi.png"
-import MaskaBun from "../assets/images/Food_items/MaskaBun.png"
-import Coldcoffee from "../assets/images/Food_items/ColdCoffee.png"
-import Biscuit from "../assets/images/Food_items/Biscuit.png"
-import Samosa from "../assets/images/Food_items/Samosa.jpg"
-import Noodles from "../assets/images/Food_images/Noodles.png"
+import iranichai from "../assets/Images/Food_items/iraniChai.png"
+import Maggi from "../assets/Images/Food_items/Maggi.png"
+import MaskaBun from "../assets/Images/Food_items/MaskaBun.png"
+import Coldcoffee from "../assets/Images/Food_items/ColdCoffee.png"
+import Biscuit from "../assets/Images/Food_items/Biscuit.png"
+import Samosa from "../assets/Images/Food_items/Samosa.jpg"
+import Noodles from "../assets/Images/Food_images/Noodles.png"
 import Leaf from "./UI/Leaf";
 
 
