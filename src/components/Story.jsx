@@ -1,4 +1,4 @@
-import cafeImage from "../assets/images/Cafe.png";
+import cafeImage from "../assets/Images/Cafe.png";
 
 function OurStory() {
   return (
