@@ -1,5 +1,5 @@
 import Card from "./UI/Card";
-import iranichai from "../assets/Images/Food_items/iraniChai.png"
+import iranichai from "../assets/Images/Food_items/IraniChai.png"
 import Maggi from "../assets/Images/Food_items/Maggi.png"
 import MaskaBun from "../assets/Images/Food_items/MaskaBun.png"
 import Coldcoffee from "../assets/Images/Food_items/ColdCoffee.png"
