@@ -12,13 +12,13 @@ import Leaf from "./UI/Leaf";
 
 function Menu() {
   const menuItems = [
-    { title: "Irani Chai", subtitle: "The Original",Displayimage:iranichai},
-    { title: "Filter Coffee", subtitle: "Freshly Brewed",Displayimage:Maggi },
-    { title: "Bun Maska", subtitle: "Buttery Goodness",Displayimage:Biscuit },
-    { title: "Samosa", subtitle: "Crispy & Spicy",Displayimage:MaskaBun },
-    { title: "Sandwich", subtitle: "Fresh & Tasty",Displayimage:Coldcoffee },
-    { title: "Osmania Biscuit", subtitle: "Hyderabadi Classic",Displayimage:Samosa },
-  ];
+  { title: "Irani Chai", subtitle: "Rich. Strong. Timeless.", Displayimage: iranichai },
+  { title: "Maggi", subtitle: "Hot. Spicy. Comforting.", Displayimage: Maggi },
+  { title: "Osmania Biscuit", subtitle: "Crispy. Buttery. Classic.", Displayimage: Biscuit },
+  { title: "Bun Maska", subtitle: "Soft. Buttery. Irresistible.", Displayimage: MaskaBun },
+  { title: "Filter Coffee", subtitle: "Bold. Aromatic. Freshly Brewed.", Displayimage: Coldcoffee },
+  { title: "Samosa", subtitle: "Golden. Crispy. Full of Flavour.", Displayimage: Samosa },
+];
 
   return (
     <section id="menu" className="bg-[#F8F0DF]">
@@ -37,7 +37,7 @@ function Menu() {
         </p>
 <Leaf
     image={Noodles}
-    className="pointer-events-none right-0 top-[136%] z-100 w-35 -rotate-0 opacity-100 sm:w-32 md:w-40"
+    className="pointer-events-none right-0 top-[145%] z-100 w-35 -rotate-0 opacity-100 sm:w-32 md:w-40"
   />
         
       </div>

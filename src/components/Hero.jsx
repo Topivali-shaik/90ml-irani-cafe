@@ -107,28 +107,34 @@ function Hero() {
 
           {/* Phrase underline */}
         
+{/* Chef Artwork Container */}
+<div className="relative mx-auto aspect-[4/5] w-full max-w-[500px] sm:max-w-[500px] md:w-[65%] md:translate-x-9">
 
-          {/* Chef Artwork Container */}
-<div className="relative mx-auto h-[380px] w-[90%] max-w-[500px] translate-x-9 sm:h-[500px] md:w-[65%]">
-  {/* Add your images here */}
+  {/* Chef */}
   <img
     src={chef}
     alt="90ML Irani Cafe chef"
-    className="h-full w-full object-contain object-bottom"
+    className="absolute inset-0 h-full w-full object-contain object-bottom"
   />
+
+  {/* Burger */}
   <Leaf
     image={Burger}
-    className="pointer-events-none right-9 top-[8%] z-100 w-25 -rotate-0 opacity-100 sm:w-32 md:w-40"
+    className="right-[6%] top-[20%] z-[20] w-[29%] rotate-0"
   />
+
+  {/* Samosa */}
   <Leaf
     image={Samosa}
-    className="pointer-events-none right-65 top-[40%] z-100 w-15 -rotate-50 opacity-100 sm:w-32 md:w-40"
+    className="left-[-7%] top-[48%] z-[20] w-[25%] -rotate-[50deg]"
   />
+
+  {/* Sandwich */}
   <Leaf
     image={Sandwitch}
-    className="pointer-events-none right-1 top-[78%] z-100 w-20 -rotate-0 opacity-100 sm:w-32 md:w-40"
+    className="bottom-[5%] right-[-5%] z-[20] w-[30%] rotate-0"
   />
-  
+
 </div>
 
         </div>
@@ -219,7 +225,7 @@ function Hero() {
         </div>
         <Leaf
     image={leaf7}
-    className="pointer-events-none right-0 top-[88%] z-100 w-28 -rotate-230 opacity-100 sm:w-32 md:w-40"
+    className="pointer-events-none right-0 top-[90%] z-100 w-28 -rotate-230 opacity-100 sm:w-32 md:w-40"
   />
 
 
