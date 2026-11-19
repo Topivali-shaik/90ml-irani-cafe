@@ -37,7 +37,7 @@ function Menu() {
         </p>
 <Leaf
     image={Noodles}
-    className="pointer-events-none right-0 top-[173%] z-100 w-35 -rotate-0 opacity-100 sm:w-32 md:w-40"
+    className="pointer-events-none right-0 top-[168%] z-100 w-35 -rotate-0 opacity-100 sm:w-32 md:w-40"
   />
         
       </div>
